@@ -27,28 +27,28 @@ nav{
     opacity: 1;
 
 }
-.logo{
-width: fit-content;
-height: fit-content;
-opacity: 1;
-gap: 10px;
-padding-top: 30px;
-padding-right: 50px;
-padding-bottom: 30px;
-padding-left: 50px;
+    .logo{
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
+    gap: 10px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
 
 }
 #menu{
- display: flex;
- justify-content: center;
- list-style: none;
- width: 50%;
- height: 50%;
- opacity: 1;
- left: 6px;
- gap: 68px;
- padding-right: 0px;
- padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    left: 6px;
+    gap: 68px;
+    padding-right: 0px;
+    padding-left: 50px;
 
 }
 #menu li{
@@ -71,94 +71,112 @@ text-align: center;
 color: #0065FC;
 
 }
-container-before-main{
-    width: 100%;
-    height: 50px;
 
-}
-container-before-main-1{
-width: 100%;
-height: 53;
-gap: 8px;
-opacity: 1;
-}
-container-before-main-1 h2{
-margin-bottom: 5px;
-width: 1.340px;
-height: 26px;
-opacity: 1;
-font-family: Raleway;
-font-weight: 700;
-font-size: 22px;
-line-height: 100%;
-letter-spacing: 0%;
-}
-container-before-main-1 p {
-    margin-top: 5px;
-}
-container-before-main-1 h2{
-    margin-bottom: 0px;
-}
-container-before-main-1 p{
-margin-top: 5px;
-width: 1340;
-height: 19;
-opacity: 1;
-font-family: Raleway;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-background: #000000;
-
-}
-input {
+.container-before-main-2 input   {
   border: none;
   outline: none;
+  color: #000;
+  opacity: 1;
+
+
+
+}
+.form{
+  padding: 13px;
+   padding-left: 25px;
+   padding-right: 0px;
+  margin: 0px;
+  border: none;
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 700; 
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center; 
+  width: 147;
+  height: 21;
+  opacity: 1;
+
 }
 
 .container-before-main-2{
 display: flex;
-gap: 0;
 justify-content: flex-start;
-width: 377;
+width: 377px;
+height: 49px;
+opacity: 1;
+gap: 0px;
+border-radius: 15px;
+border-width: 1px;
+
+
 
 
 }
-container-before-main-2 img{
-width: 48px;
-height: 30px;
+.container-before-main-2 img{
 opacity: 1;
 border-width: 1px;
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
-margin-right: 0%;
+
+
 
 }
-button{
-width: 100px;
+
+
+.container-before-main-2 button{
+
+background: #0065FC;
+color: #FFFFFF;
+font-family: Raleway;
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+width: fit-content;
 height: 49px;
 opacity: 1;
-gap: 10px;
+gap: 0px;
 padding-top: 15px;
 padding-right: 16px;
 padding-bottom: 15px;
 padding-left: 16px;
-border-width: 1px;
+border-width: 0px;
 border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
-background: #0065FC;
-border: 1px solid #0065FC
+margin-right: 0%;
 
 }
-main{
-width: 1.440;
-height: 1.722;
+.icon-box{
+width: 50px;
+height: 49px;
 opacity: 1;
-gap: 35px;
-padding-right: 50px;
-padding-left: 50px;
+border-width: 1px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+background: #F2F2F2;
+border: 1px solid #F2F2F2;
+display: flex;
+align-items: center;     
+justify-content: center;  
+}
+.icon-box i{
+width: 14;
+height: 18;
+opacity: 1;
+top: 15px;
+left: 18px;
 
+}
+.container-before-main-3  ul{
+    display: flex;
+    justify-content: ;
+    list-style: none;
+}
+.container-before-main-4{
+    display: flex;
+    text-align: center;
 }
 .main-container {
     width: 100%;
@@ -210,12 +228,11 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-container-before-main{
 
-}
-container-before-main-2{
-    display: flex;
-}
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
