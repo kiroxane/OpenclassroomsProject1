@@ -127,7 +127,8 @@ input::placeholder {
 .container-before-main-2{
 display: flex;
 justify-content: flex-start;
-width: 377px;
+/* width: 377px; */
+width: fit-content;
 height: 49px;
 opacity: 1;
 gap: 0px;
@@ -135,6 +136,7 @@ border-radius: 15px;
 border-width: 1px;
 margin-top: 35px;
 margin-bottom: 35px;
+border: 1px solid #F2F2F2
 }
 .container-before-main-2 img{
 opacity: 1;
@@ -142,8 +144,10 @@ border-width: 1px;
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
 } 
-
-.container-before-main-2 button{
+.btn-mobile{
+    display: none;
+}
+.btn-desktop{
 background: #0065FC;
 color: #FFFFFF;
 font-family: Raleway;
@@ -330,6 +334,7 @@ text-align: center;
 .text{
     margin-top: 30px;
     margin-bottom: 0px;
+    
 }
 .card-txt-marseille{
 padding-right: 15px;
@@ -367,7 +372,7 @@ border-radius: 20px;
 background:#FFFFFF;
 box-shadow: 0px 3px 15px 0px #0000001A;
 overflow: hidden;
- border: 5px  solid #FFFFFF ;
+border: 5px  solid #FFFFFF ;
 
 }
 /****** Populaires ***********/
@@ -384,12 +389,7 @@ overflow: hidden;
 
 .populaires-cards .card {
     display: flex; 
-    /* width: 335px;
-    height: 146;
-    opacity: 1;
-    border-radius: 20px; */
-
-      
+    
 } 
 
 .populaires-cards img {
@@ -722,13 +722,32 @@ padding: 20px;
     gap: 15px;
  }
    .container-before-main-3 > ul{
-    
     display:grid;
     grid-template-columns: repeat(2, max-content);
     gap:15px;
    }
    
+   .btn-desktop{
+    display: none;
+   }
    
+   .btn-mobile{
+    display: flex;              
+    align-items: center;        /* centre verticalement */
+    justify-content: center;    /* centre horizontalement */
+    width: 49px;
+    height: 49px;
+    border: none;
+    border-radius: 15px;
+    background: #0065FC;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 0;                 /* supprime le padding */
+}
+
+.btn-mobile i{
+    color: #FFFFFF;
+    font-size: 18px;
+}
    .container-before-main-3 > ul li{
      width: 100%;
     opacity: 1;
@@ -756,16 +775,36 @@ padding: 20px;
     .hebergements-and-populaires section{
         border-radius: 0;
     }
-    .hebergements-and-populaires section :nth-child(1){
+    .hebergements-and-populaires section:nth-child(1){
     background-color: #FFFFFF;
     }
-  .hebergements-marseille{
+    #hebergements-marseille{
+        margin-bottom: 0;
+        padding-left: 45px;
+
+    }
+  .hebergements-marseille{   /* impacter un card*/
     display: block;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
+   
   }
+  .hebergements-marseille a{
+   display: block;
+   width: 100%;
+   height: fit-content;
+   opacity: 1;
+   gap: 4px;
+   padding-bottom: 15px;
+   border-radius: 20px; 
+   box-shadow: 0px 3px 15px 0px #0000001A;
+  }
+  
     .hebergements {
        order: 2;
        flex-direction: column;
-
+       background: #F2F2F2;
     }
 
     .populaires {
@@ -775,7 +814,10 @@ padding: 20px;
         margin-top: 0;
     }
 
-   
+   .text{
+
+    padding-left: 40PX;
+}
 
  .populaires-title {
     display: flex;
@@ -803,12 +845,12 @@ padding: 20px;
  }
 
  .populaires-cards .card-content { 
-    width: 67%;
+    /* width: 67%;       à voir pour régler le problème avrc populaire
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box; 
+    box-sizing: border-box;  */
  } 
 
   .populaires-cards .card-title {
@@ -818,27 +860,32 @@ padding: 20px;
 
  .populaires-cards .card-subtitle {
     margin: 0; 
- }  
+ }   
 
- .populaires-cards .card-rating {
+  .populaires-cards .card-rating {
     margin-bottom: 5px;
  } 
    
-   .container-after-main :first-child article{
-    
-   }
-
-   .container-after-main{
-    
-    flex-wrap:wrap ;
-  }
-  .populaires-cards .card{
    
-   width: 100%;
-   }
-  .activity-marseille{
-    flex-direction: column;
-  } 
+   .container-after-main{
+    display: block;
+   
+  }
+  .container-after-main a{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    height: fit-content;
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    object-fit: cover;
+    margin: left 30px; ;
+    margin: right 30px; ;
+
+  }
+  
+ 
 
   .container-after-main a{
     
