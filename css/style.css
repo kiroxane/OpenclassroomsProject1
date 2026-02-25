@@ -580,7 +580,7 @@ display: flex;
         font-size: 13px;
     }
 
-   
+  
 
    .container-after-main{
     display: flex;
@@ -782,18 +782,12 @@ padding: 20px;
     #hebergements-marseille{
         margin-bottom: 15px;
         padding-top: 20px;
-         /* padding-left: 20px;  */
-
+       
     }
   .hebergements-marseille{   /* impacter un card*/
     display: block;
     margin-bottom: 15px;
-     /* width: 335px; */
      height: auto;
-
-
-
-    /* margin-top: 20px; */
 
    
   }
@@ -825,7 +819,10 @@ padding: 20px;
        margin-top: 15px;
 
     }
-
+.hebergement-title{
+    margin-left: 30px;
+}
+}
     .populaires {
         order: 1;
         display: block;
@@ -836,10 +833,13 @@ padding: 20px;
     }
 
    .text{
+ 
+    size: 18px;
+    margin-left: ;
 
-    padding-left: 20PX; 
-}
-
+    /* padding-left: 20PX; 
+} */
+   }
  .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -852,8 +852,7 @@ padding: 20px;
  .populaires-cards .card {
    
     display: flex; 
-    /* width: 335px;
-    height: 146px; */
+   
     width: 100%;
     height: 146PX;
     opacity: 1;
@@ -861,7 +860,6 @@ padding: 20px;
       }
  .populaires-cards img {
     width: 33%;
-   
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -913,22 +911,19 @@ padding: 20px;
 
   }
   
-.hebergement-title{
-    /* margin-left:35px ; */
-}
+
   .container-after-main img{
-   max-width: 100%;
-   height: auto;
+   
    opacity: 1;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
   }
   .container-after-main{
-   
-    width: 100%;
     height: fit-content;
     justify-content: center;
-    /* margin-left: 35px; */
+    margin-left: 30px;
+    margin-right: 30px;
+    
   }
   .footer{
     display: block ;
@@ -940,13 +935,11 @@ padding: 20px;
 
   }
   .footer-info{
-    width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
     height: fit-content;
     opacity: 1;
     gap: 15px;
-
-
-
   }
 } 
 
